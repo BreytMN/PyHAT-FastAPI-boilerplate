@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- htmx, alpinejs, tailwindcss -->
+    <script src="{{ static_paths['htmx'] }}"></script>
+    <script src="{{ static_paths['alpinejs'] }}"></script>
+    <link href="{{ static_paths['tailwindcss'] }}" rel="stylesheet">
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="static/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="static/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="static/assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="static/assets/favicon/site.webmanifest">
+
+    <title>{{ title }}</title>
+</head>
+<body>
+    <h1>{{ title }} - {{ version }}</h1>
+    {{ summary }}
+</body>
+</html>
